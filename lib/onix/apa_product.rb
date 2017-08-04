@@ -6,6 +6,7 @@ module ONIX
     delegate :record_reference, :record_reference=
     delegate :notification_type, :notification_type=
     delegate :product_form, :product_form=
+    delegate :epub_type, :epub_type=
     delegate :edition, :edition=
     delegate :number_of_pages, :number_of_pages=
     delegate :bic_main_subject, :bic_main_subject=

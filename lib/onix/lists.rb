@@ -76,6 +76,12 @@ module ONIX
 
     # Shortcut to retrieve a common code list
     #
+    def self.epub_type
+      self.instance.list(10)
+    end
+
+    # Shortcut to retrieve a common code list
+    #
     def self.product_form_detail
       self.instance.list(78)
     end
