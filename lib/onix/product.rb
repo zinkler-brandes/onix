@@ -36,6 +36,7 @@ module ONIX
         nil
       end
     end
+    xml_accessor :city_of_publication, :from => "CityOfPublication"
     xml_accessor :copyright_year, :from => "CopyrightYear", :as => Integer
     xml_accessor :year_first_published, :from => "YearFirstPublished", :as => Fixnum
     xml_accessor :sales_restrictions, :from => "SalesRestriction", :as => [ONIX::SalesRestriction]
