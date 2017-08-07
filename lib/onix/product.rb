@@ -29,6 +29,8 @@ module ONIX
     xml_accessor :imprints, :from => "Imprint", :as => [ONIX::Imprint]
     xml_accessor :publishers, :from => "Publisher", :as => [ONIX::Publisher]
     xml_accessor :publishing_status, :from => "PublishingStatus", :as => Fixnum, :to_xml => ONIX::Formatters.two_digit
+    xml_accessor :city_of_publication, :from => "CityOfPublication"
+    xml_accessor :country_of_publication, :from => "CountryOfPublication"
     xml_accessor(:publication_date, :from => "PublicationDate", :to_xml => ONIX::Formatters.yyyymmdd) do |val|
       begin
         Date.parse(val)
@@ -36,8 +38,9 @@ module ONIX
         nil
       end
     end
-    xml_accessor :city_of_publication, :from => "CityOfPublication"
-    xml_accessor :country_of_publication, :from => "CountryOfPublication"
+
+    xml_accessor :related_products, :from => "RelatedProduct", :as => [ONIX::RelatedProduct]
+
     xml_accessor :copyright_year, :from => "CopyrightYear", :as => Integer
     xml_accessor :year_first_published, :from => "YearFirstPublished", :as => Fixnum
     xml_accessor :sales_restrictions, :from => "SalesRestriction", :as => [ONIX::SalesRestriction]
@@ -68,6 +71,7 @@ module ONIX
       self.imprints = []
       self.publishers = []
       self.sales_restrictions = []
+      self.related_products = []
       self.measurements = []
       self.supply_details = []
       self.market_representations = []
