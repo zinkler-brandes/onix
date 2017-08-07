@@ -1,10 +1,10 @@
 # coding: utf-8
 
 module ONIX
-  class Subject
+  class MainSubject
     include ROXML
 
-    xml_name "Subject"
+    xml_name "MainSubject"
 
     xml_accessor :subject_scheme_id,      :from => "SubjectSchemeIdentifier", :as => Fixnum, :to_xml => ONIX::Formatters.two_digit
     xml_accessor :subject_scheme_name,    :from => "SubjectSchemeName"
