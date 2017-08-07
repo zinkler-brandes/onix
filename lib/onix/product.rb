@@ -11,6 +11,7 @@ module ONIX
     xml_accessor :product_identifiers, :from => "ProductIdentifier", :as => [ONIX::ProductIdentifier]
     xml_accessor :product_form, :from => "ProductForm"
     xml_accessor :epub_type, :from => "EpubType"
+    xml_accessor :epub_type_note, :from => "EpubTypeNote"
     xml_accessor :product_form_detail, :from => "ProductFormDetail"
     xml_accessor :series, :from => "Series", :as => [ONIX::Series]
     xml_accessor :titles, :from => "Title", :as => [ONIX::Title]
