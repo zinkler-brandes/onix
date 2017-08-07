@@ -58,7 +58,7 @@ module ONIX
       self.titles = []
       self.contributors = []
       self.websites = []
-      self.subjects = []
+      self.main_subjects = []
       self.audience_ranges = []
       self.text = []
       self.languages = []
