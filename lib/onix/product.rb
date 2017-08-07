@@ -21,7 +21,7 @@ module ONIX
     xml_accessor :number_of_pages, :from => "NumberOfPages", :as => Fixnum
     xml_accessor :basic_main_subject, :from => "BASICMainSubject"
     xml_accessor :bic_main_subject, :from => "BICMainSubject"
-    xml_accessor :subjects, :from => "Subject", :as => [ONIX::Subject]
+    xml_accessor :main_subjects, :from => "MainSubject", :as => [ONIX::MainSubject]
     xml_accessor :audience_code, :from => "AudienceCode", :to_xml => ONIX::Formatters.two_digit
     xml_accessor :audience_ranges, :from => "AudienceRange", :as => [ONIX::AudienceRange]
     xml_accessor :text, :from => "OtherText", :as => [ONIX::OtherText]
