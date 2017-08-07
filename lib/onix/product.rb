@@ -19,6 +19,7 @@ module ONIX
     xml_accessor :edition_number, :from => "EditionNumber", :as => Fixnum
     xml_accessor :languages, :from => "Language", :as => [ONIX::Language]
     xml_accessor :number_of_pages, :from => "NumberOfPages", :as => Fixnum
+    xml_accessor :main_subject, :from => "MainSubject", :as => [ONIX::MainSubject]
     xml_accessor :basic_main_subject, :from => "BASICMainSubject"
     xml_accessor :bic_main_subject, :from => "BICMainSubject"
     xml_accessor :subjects, :from => "Subject", :as => [ONIX::Subject]
