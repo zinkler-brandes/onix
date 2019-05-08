@@ -28,6 +28,7 @@ module ONIX
     xml_accessor :audience_ranges, :from => "AudienceRange", :as => [ONIX::AudienceRange]
     xml_accessor :text, :from => "OtherText", :as => [ONIX::OtherText]
     xml_accessor :media_files, :from => "MediaFile", :as => [ONIX::MediaFile]
+    xml_accessor :sales_rights, :from => "SalesRights", :as => [ONIX::SalesRights]
     xml_accessor :imprints, :from => "Imprint", :as => [ONIX::Imprint]
     xml_accessor :publishers, :from => "Publisher", :as => [ONIX::Publisher]
     xml_accessor :publishing_status, :from => "PublishingStatus", :as => Fixnum, :to_xml => ONIX::Formatters.two_digit
