@@ -78,6 +78,7 @@ module ONIX
       self.related_products = []
       self.measurements = []
       self.supply_details = []
+      self.sales_rights = []
       self.market_representations = []
     end
   end
